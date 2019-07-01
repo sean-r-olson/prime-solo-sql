@@ -11,7 +11,7 @@ UPDATE "accounts" SET "account_balance" = 10 WHERE "account_balance" = 0 AND "tr
 SELECT * FROM "accounts" WHERE "transactions_attempted" >= 9;
 
 5 -- How do you get the username and account balance of the 3 users with the highest balances, sorted highest to lowest balance? NOTE: Research LIMIT
-SELECT * FROM "accounts" ORDER BY "account_balance" DESC LIMIT 3;
+SELECT "username", "account_balance" FROM "accounts" ORDER BY "account_balance" DESC LIMIT 3;
 
 6 -- How do you get the username and account balance of the 3 users with the lowest balances, sorted lowest to highest balance?
 SELECT "username", "account_balance" FROM "accounts" ORDER BY "account_balance" ASC LIMIT 3;
